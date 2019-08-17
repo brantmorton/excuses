@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Excuse
 
-# Register your models here.
+admin.site.register(Excuse)
+
