@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'excuseapi',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'multiselectfield'
 ]
 
 MIDDLEWARE = [

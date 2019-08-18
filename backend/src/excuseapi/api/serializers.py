@@ -5,4 +5,4 @@ from excuseapi.models import Excuse
 class ExcuseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Excuse
-        fields = ('title', 'content')
+        fields = ('title', 'content', 'reason')
