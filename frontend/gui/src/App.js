@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Excuse from './components/Excuse'
+import Excuse from './containers/Excuse'
 
 function App() {
   return (
