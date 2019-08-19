@@ -1,0 +1,18 @@
+.excuseSelection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0);;
+    flex-wrap: wrap;
+}
+
+select {
+    height: 3rem;
+    margin-left: 1.5rem;
+    display: flex;
+    font-size: 1.5rem;
+    border-radius: 7.5%;
+    background-color: gray;
+}
+

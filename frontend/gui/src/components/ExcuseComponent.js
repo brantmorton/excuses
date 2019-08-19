@@ -1,9 +1,10 @@
 import React from "react"
+import '../Excuse.css';
 
 function ExcuseComponent(props) {
     return (
         <div>
-            <div>
+            <div className="excuseSelection">
                 <h1>I need an excuse for</h1>
                 <select 
                     name="reason" 
