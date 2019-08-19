@@ -3,7 +3,7 @@ import '../Excuse.css';
 
 function ExcuseComponent(props) {
     return (
-        <div>
+        <div className="generatorContainer">
             <div className="excuseSelection">
                 <h1>I need an excuse for</h1>
                 <select 
