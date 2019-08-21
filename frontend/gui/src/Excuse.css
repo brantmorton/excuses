@@ -1,9 +1,13 @@
 
 
 .generatorContainer {
-    margin: 25vh 15vw;
+    margin: 25vh 25vw;
     border: 2px solid black;
-    padding: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.384);
+    padding: 5vh;
+    background-color: white;
+    border-radius: 15px;
+    height: 30vh;
 }
 
 .excuseSelection {
@@ -26,6 +30,7 @@ select {
 }
 
 button {
+    margin-top: 2rem;
     background-color: gray;
     border: 2px solid black;
     border-radius: 7.5%;

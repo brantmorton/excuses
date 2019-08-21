@@ -45,7 +45,6 @@ var/
 # dependencies
 node_modules/
 .pnp/
-public/
 .pnp.js
 
 # testing
