@@ -17,7 +17,7 @@ function ExcuseComponent(props) {
                 </select>
             </div>
             <h1>{props.data.randomExcuse}</h1>
-            <button onClick={props.handleClick}>
+            <button onClick={props.handleClick} className="btn">
                 Generate
             </button>
             <h1>{props.data.currentCategory.content}</h1>

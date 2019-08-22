@@ -29,12 +29,14 @@ select {
     background-color: gray;
 }
 
-button {
+.btn {
     margin-top: 2rem;
-    background-color: gray;
-    border: 2px solid black;
+    border: 2px solid #00AA8D;
+    background: none;
     border-radius: 7.5%;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: 1s all ease;
+    text-transform: uppercase;
 }
-
