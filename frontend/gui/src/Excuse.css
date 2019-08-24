@@ -10,6 +10,10 @@
     
 }
 
+.excuseSelection > h1 {
+    font-weight: 400;
+}
+
 .excuseSelection {
     display: flex;
     justify-content: center;
@@ -20,9 +24,10 @@
 }
 
 select {
-    margin-top: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0.5rem;
     height: 2.5rem;
-    margin-left: 1.25rem;
+    margin-left: 0.75rem;
     display: flex;
     font-size: 1.5rem;
     border-radius: 7.5%;
@@ -32,6 +37,7 @@ select {
 }
 
 .btn {
+    font-family: 'Raleway', sans-serif;
     margin-top: 0.25rem;
     border: 2px solid rgb(245, 1, 151);
     background: none;
@@ -87,7 +93,6 @@ select:focus {
     }
 
     select {
-        margin-left: 0.5rem;
         font-size: 1.25rem;
     }
 
