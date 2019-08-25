@@ -1,4 +1,8 @@
 
+.wrapper {
+    visibility: hidden;
+}
+
 
 .generatorContainer {
     margin: 25vh 25vw;
