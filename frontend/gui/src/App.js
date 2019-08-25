@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Excuse from './containers/Excuse'
+import ExcuseComponent from './components/ExcuseComponent'
 
 function App() {
   return (
     <div className="App">
-      <Excuse />
+      <ExcuseComponent />
     </div>
   );
 }
