@@ -2,3 +2,12 @@
   text-align: center;
 }
 
+.logo {
+  position: absolute;
+  left: 10vw;
+  top: 2vh;
+  color: white;
+  font-size: 2rem;
+  
+}
+

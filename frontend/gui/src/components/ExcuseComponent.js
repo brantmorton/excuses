@@ -27,9 +27,8 @@ function ExcuseComponent() {
     
     useEffect(() => {
         TweenLite.to(wrapper, 0, {css: {visibility: "visible"}})
-        TweenLite.from(generatorContainer, 2, {opacity: 0, x: 100, ease: Power3.easeOut})
-        TweenLite.from(excuse, 1.5, {opacity: 0, ease: Power3.easeIn})
-
+        TweenLite.from(generatorContainer, 1.3, {opacity: 0.5,  x:-1000, rotation: 180, ease: Power3.easeOut})
+        TweenLite.from(excuse, 1, {opacity: 0, ease: Power3.easeIn})
     }, [])
     
     // On click, select a random excuse
@@ -40,6 +39,8 @@ function ExcuseComponent() {
         const randomExcuseGenerated = currentCategory[randNum].content
         
         setRandomExcuse(randomExcuseGenerated)
+
+        TweenLite.from(excuse, 0.3, {opacity: 0, x: -100, ease: Power3.easeOut})
     }
 
     // When reason selection is made, pool only the excuses in the selected category
@@ -77,7 +78,9 @@ function ExcuseComponent() {
                     <h1 ref={el => excuse = el}>
                         {randomExcuse}
                     </h1>
-                    <button onClick={handleClick} className="btn">
+                    <button onClick={handleClick} 
+                        className="btn" 
+                    >
                         Generate
                     </button>
                     <h1>{currentCategory.content}</h1>
