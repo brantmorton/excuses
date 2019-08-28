@@ -11,14 +11,15 @@ function ExcuseComponent() {
     const [currentCategory, setCurrentCategory] = useState([])
     
     // This hook is to fetch data from the api; points to the 'work' data on mount
-    useEffect( () => 
-    axios.get('http://127.0.0.1:8000/api/')
-    .then(response => {
-        setAllExcuses(response.data)
-        setCurrentCategory(response.data.filter(excuse => excuse.reason.includes('work')))
-    })
-    , []
-    )
+    useEffect( () => {
+        async function fetchData() {
+            const response = await axios.get('http://127.0.0.1:8000/api/')
+            setAllExcuses(response.data)
+            setCurrentCategory(response.data.filter(excuse => excuse.reason.includes('work')))
+        }
+        fetchData()
+        } ,[])
+
     
     // This hook uses GSAP on mount
     let wrapper = useRef(null)
