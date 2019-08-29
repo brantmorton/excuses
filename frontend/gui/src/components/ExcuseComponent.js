@@ -8,7 +8,7 @@ function ExcuseComponent() {
     const [allExcuses, setAllExcuses] = useState([]);
     const [randomExcuse, setRandomExcuse] = useState('Click Generate')
     const [reason, setReason] = useState('work')
-    const [currentCategory, setCurrentCategory] = useState([])
+    const [currentCategory, setCurrentCategory] = useState(['work'])
     
     // This hook is to fetch data from the api; points to the 'work' data on mount
     useEffect( () => {
@@ -27,14 +27,14 @@ function ExcuseComponent() {
     let excuse = useRef(null)
     
     useEffect(() => {
-        TweenLite.to(wrapper, 0, {css: {visibility: "visible"}})
-        TweenLite.from(generatorContainer, 1.3, {opacity: 0.5,  x:-1000, rotation: 180, ease: Power3.easeOut})
-        TweenLite.from(excuse, 1, {opacity: 0, ease: Power3.easeIn})
+       TweenLite.to(wrapper, 0, {css: {visibility: "visible"}})
+       TweenLite.from(generatorContainer, 1.3, {opacity: 0.5,  x:-1000, rotation: 180, ease: Power3.easeOut})
+       TweenLite.from(excuse, 1, {opacity: 0, ease: Power3.easeIn})
     }, [])
     
     // On click, select a random excuse
     const handleClick = event => {
-        event.preventDefault()
+        if (event) event.preventDefault()
 
         const randNum = Math.floor(Math.random() * currentCategory.length)
         const randomExcuseGenerated = currentCategory[randNum].content
@@ -84,7 +84,7 @@ function ExcuseComponent() {
                     >
                         Generate
                     </button>
-                    <h1>{currentCategory.content}</h1>
+                    <h1 className="excuse">{currentCategory.content}</h1>
                 </div>
             </div>
         )
