@@ -4,6 +4,6 @@ from .views import ExcuseListView, ExcuseDetailView
 
 
 urlpatterns = [
-    path('', ExcuseListView.as_view()),
-    path('<pk>', ExcuseDetailView.as_view()),
+    path('', ExcuseListView.as_view(), name='list'),
+    path('<pk>', ExcuseDetailView.as_view(), name='detail'),
 ]
