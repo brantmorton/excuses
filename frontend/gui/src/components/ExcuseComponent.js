@@ -73,7 +73,7 @@ function ExcuseComponent() {
                         >
                             <option value="work">Work</option>
                             <option value="plans">Plans</option>
-                            <option value="myself">Myself</option>
+                            <option id="myself" value="myself">Myself</option>
                         </select>
                     </div>
                     <h1 ref={el => excuse = el}>
