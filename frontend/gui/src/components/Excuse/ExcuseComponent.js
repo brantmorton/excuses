@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react"
-import '../Excuse.css';
+import './Excuse.css';
 import axios from "axios"
 import {TweenLite, Power3} from 'gsap'
 
