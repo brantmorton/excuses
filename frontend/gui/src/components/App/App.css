@@ -8,6 +8,13 @@
   top: 2vh;
   color: white;
   font-size: 2rem;
-  
+}
+
+@media (max-width: 475px) {
+  .logo {
+    top: 0;
+    left: 5vw;
+    font-size: 1.75rem;
+  }
 }
 
